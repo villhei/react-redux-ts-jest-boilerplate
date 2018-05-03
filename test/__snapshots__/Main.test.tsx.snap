@@ -6,7 +6,8 @@ ShallowWrapper {
   Symbol(enzyme.__root__): [Circular],
   Symbol(enzyme.__unrendered__): <Unknown
     count={0}
-    setCount={[MockFunction]}
+    resetCounter={[Function]}
+    setCount={[Function]}
   />,
   Symbol(enzyme.__renderer__): Object {
     "batchedUpdates": [Function],
@@ -26,9 +27,16 @@ ShallowWrapper {
           0
         </h1>,
         <button
+          id="increment"
           onClick={[Function]}
         >
           Increment
+        </button>,
+        <button
+          id="reset"
+          onClick={[Function]}
+        >
+          Reset
         </button>,
       ],
     },
@@ -57,10 +65,24 @@ ShallowWrapper {
         "nodeType": "host",
         "props": Object {
           "children": "Increment",
+          "id": "increment",
           "onClick": [Function],
         },
         "ref": null,
         "rendered": "Increment",
+        "type": "button",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": "Reset",
+          "id": "reset",
+          "onClick": [Function],
+        },
+        "ref": null,
+        "rendered": "Reset",
         "type": "button",
       },
     ],
@@ -78,9 +100,16 @@ ShallowWrapper {
             0
           </h1>,
           <button
+            id="increment"
             onClick={[Function]}
           >
             Increment
+          </button>,
+          <button
+            id="reset"
+            onClick={[Function]}
+          >
+            Reset
           </button>,
         ],
       },
@@ -109,10 +138,24 @@ ShallowWrapper {
           "nodeType": "host",
           "props": Object {
             "children": "Increment",
+            "id": "increment",
             "onClick": [Function],
           },
           "ref": null,
           "rendered": "Increment",
+          "type": "button",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": "Reset",
+            "id": "reset",
+            "onClick": [Function],
+          },
+          "ref": null,
+          "rendered": "Reset",
           "type": "button",
         },
       ],

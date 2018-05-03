@@ -1,5 +1,5 @@
 import { Action } from 'redux'
-import { isSetCountAction } from './actions'
+import { isSetCountAction, isResetAction } from './actions'
 
 export type State = {
   count: number
@@ -14,6 +14,12 @@ export default (state = initialState, action: Action) => {
     return {
       ...state,
       count: action.payload
+    }
+  }
+  if (isResetAction(action)) {
+    return {
+      ...state,
+      count: 0
     }
   }
   return state
