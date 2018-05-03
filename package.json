@@ -1,0 +1,9 @@
+{
+  "name": "react-redux-jest-ts",
+  "version": "1.0.0",
+  "description": "Boilerplate",
+  "main": "src/index.ts",
+  "author": "Ville Heikkinen",
+  "license": "MIT",
+  "private": false
+}
