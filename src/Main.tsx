@@ -1,19 +1,19 @@
 import * as React from 'react'
 import { connect, Dispatch } from 'react-redux'
 import { State } from './reducer'
-import { setSlideAction } from './actions'
+import { setCountAction } from './actions'
 
 export type Props = {
-  slide: number,
-  setSlide: (n: number) => void
+  count: number,
+  setCount: (n: number) => void
 }
 
 export const Main = (props: Props) => {
-  const { setSlide, slide } = props
+  const { setCount, count } = props
   return (
     <div>
-      <h1>Hello there, the slide is {slide}</h1>
-      <button onClick={() => setSlide(props.slide + 1)}>
+      <h1>Hello there, the count is {count}</h1>
+      <button onClick={() => setCount(props.count + 1)}>
         Increment
       </button>
     </div>
@@ -23,7 +23,7 @@ export const Main = (props: Props) => {
 const mapStateToProps = (state: State): State => state
 
 const mapDispatchToProps = (dispatch: Dispatch<State>) => ({
-  setSlide: (n: number) => { dispatch(setSlideAction(n)) }
+  setCount: (n: number) => { dispatch(setCountAction(n)) }
 })
 
 export default connect(mapStateToProps, mapDispatchToProps)(Main)

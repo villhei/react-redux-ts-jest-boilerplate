@@ -5,8 +5,8 @@ ShallowWrapper {
   "length": 1,
   Symbol(enzyme.__root__): [Circular],
   Symbol(enzyme.__unrendered__): <Unknown
-    setSlide={[MockFunction]}
-    slide={0}
+    count={0}
+    setCount={[MockFunction]}
   />,
   Symbol(enzyme.__renderer__): Object {
     "batchedUpdates": [Function],
@@ -22,7 +22,7 @@ ShallowWrapper {
     "props": Object {
       "children": Array [
         <h1>
-          Hello there, the slide is 
+          Hello there, the count is 
           0
         </h1>,
         <button
@@ -40,13 +40,13 @@ ShallowWrapper {
         "nodeType": "host",
         "props": Object {
           "children": Array [
-            "Hello there, the slide is ",
+            "Hello there, the count is ",
             0,
           ],
         },
         "ref": null,
         "rendered": Array [
-          "Hello there, the slide is ",
+          "Hello there, the count is ",
           0,
         ],
         "type": "h1",
@@ -74,7 +74,7 @@ ShallowWrapper {
       "props": Object {
         "children": Array [
           <h1>
-            Hello there, the slide is 
+            Hello there, the count is 
             0
           </h1>,
           <button
@@ -92,13 +92,13 @@ ShallowWrapper {
           "nodeType": "host",
           "props": Object {
             "children": Array [
-              "Hello there, the slide is ",
+              "Hello there, the count is ",
               0,
             ],
           },
           "ref": null,
           "rendered": Array [
-            "Hello there, the slide is ",
+            "Hello there, the count is ",
             0,
           ],
           "type": "h1",

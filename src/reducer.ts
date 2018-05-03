@@ -1,19 +1,19 @@
 import { Action } from 'redux'
-import { isSetSlideAction } from './actions'
+import { isSetCountAction } from './actions'
 
 export type State = {
-  slide: number
+  count: number
 }
 
 export const initialState: State = {
-  slide: 0
+  count: 0
 }
 
 export default (state = initialState, action: Action) => {
-  if (isSetSlideAction(action)) {
+  if (isSetCountAction(action)) {
     return {
       ...state,
-      slide: action.payload
+      count: action.payload
     }
   }
   return state

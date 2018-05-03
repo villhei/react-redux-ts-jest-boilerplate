@@ -7,16 +7,16 @@ export interface Action<T> extends ReduxAction {
   readonly payload: T
 }
 
-export const SET_SLIDE = 'SET_SLIDE'
+export const SET_COUNT = 'SET_COUNT'
 
 
-export function setSlideAction(n: number): Action<number> {
+export function setCountAction(n: number): Action<number> {
   return {
-    type: SET_SLIDE,
+    type: SET_COUNT,
     payload: n
   }
 }
 
-export function isSetSlideAction(candidate: any): candidate is Action<number> {
-  return candidate.type === SET_SLIDE
+export function isSetCountAction(candidate: any): candidate is Action<number> {
+  return candidate.type === SET_COUNT
 }
