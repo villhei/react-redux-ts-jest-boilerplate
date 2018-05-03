@@ -1,0 +1,32 @@
+{
+  "compilerOptions": {
+    "outDir": "ts-build",
+    "sourceMap": true,
+    "module": "commonjs",
+    "target": "es6",
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "strict": true,
+    "forceConsistentCasingInFileNames": true,
+    "jsx": "react",
+    "moduleResolution": "node",
+    "lib": [
+      "es2017",
+      "dom"
+    ],
+    "types": [
+      "node",
+      "jest"
+    ],
+    "allowJs": true
+  },
+  "include": [
+    "src/**/*",
+    "test/**/*"
+  ],
+  "exclude": [
+    "node_modules",
+    "dist",
+    "ts-build"
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "extends": "tslint-config-standard",
+  "rules": {
+    "no-any": true,
+    "no-import-side-effect": true,
+    "semicolon": [
+      true,
+      "never"
+    ],
+    "no-unused-expression": [
+      true,
+      "allow-fast-null-checks"
+    ],
+    "ordered-imports": [
+      true,
+      {
+        "named-imports-order": "lowercase-last",
+        "import-sources-order": "lowercase-last",
+        "grouped-imports": true
+      }
+    ],
+    "no-unused-variable": true,
+    "space-before-function-paren": [
+      true,
+      {
+        "anonymous": "always",
+        "named": "never",
+        "asyncArrow": "always",
+        "method": "never",
+        "constructor": "never"
+      }
+    ]
+  }
+}
